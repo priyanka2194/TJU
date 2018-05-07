@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Load the AJAX API-->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>TJU Accessibility</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Our Code Starts Here -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#FFE9E3;">
+    <a class="navbar-brand" id="brand" href="#">Advisors</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="Profile.html">Profile<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Connect.html">Connect<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Calendar.html">Calendar<span class="badge" id="notification">2</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Badges.html">Coins<span class="badge" id="notification1">1</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="Feedback.html">Feedback</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="Share.html">Share</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="#">Profile settings</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="LogIn.html">Log out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<h2 id="shareIntro"> Which advisor would you like to share your chart with? </h2>
+  <div id="ad1" class="card text-left" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title-Kelly"><img src="images/Kelly.png" id="smile" alt="smile"> Kelly Smith </h5>
+      <hr>
+      <p id="kellyInfo"> Director <br> Office of Accessibility </p>
+     <hr>
+      <p><button id="doneChart" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      Share
+      </button></p>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Awesome!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <p><img id="kelly" src="images/Kelly.png" alt="badge"></p>
+            <div class="modal-body" id="badgeContent">
+              Your chart has been shared with Kelly!
+            </div>
+            <div class="modal-footer">
+
+            <a href="Profile.html" id="doneChart1" class="btn btn-primary"> Back to profile</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+<div id="ad2" class="card text-left" style="width: 18rem; text-align:center">
+  <div class="card-body">
+    <h5 class="card-title-Kelly"><img src="images/Amanda.png" id="like" alt="like">Amanda Jones</h5>
+
+    <hr>
+    <p id="kellyInfo2">Advisor<br> Office of Accessibility
+    <hr>
+    <p><button id="doneChart2" type="button" class="btn btn-primary">
+    Share
+    </button></p>
+</div>
+</div>
+    <!-- Our Code Ends Here -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then custom JS in the "bucket" -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/bucket.js"></script>
+  </body>
+</html>
